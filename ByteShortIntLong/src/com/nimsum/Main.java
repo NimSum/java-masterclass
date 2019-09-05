@@ -32,5 +32,20 @@ public class Main {
         long maxLongValue = Long.MAX_VALUE;
         System.out.println("LONG min value = " + minLongValue);
         System.out.println("LONG max value = " + maxLongValue);
+
+        // Arithmetic - try to always use an integer
+        int intDivision = (myMinIntValue / 2); // java treats parens as ints
+        byte byteValue = (byte) (myMinIntValue / 2); // casting - tells java to treat the parens as a byte
+        short shortValue  = (short) (minShortValue / 2);
+
+        // Primitive Challenge:
+        byte byteChallenge = 100;
+        short shortChallenge = 1000;
+        int intChallenge = 50;
+
+        long challengeTotal = 50_000L + 10L * (byteChallenge + shortChallenge + intChallenge);
+        System.out.println(challengeTotal);
+
+        short shortTotal = (short) (1000 + 10 * (byteChallenge + shortChallenge + intChallenge));
     }
 }
